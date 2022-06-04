@@ -1,0 +1,7 @@
+<form [formGroup]="productformref" (ngSubmit)="addbtnclicked()">
+   Name : <input type="text" formControlName="name"> <br/>
+  Qty : <input type="number" formControlName="qty"> <br/>
+  Rate : <input type="number" formControlName="rate"><br/>
+  <input type="submit" value="add">
+  <input type="reset" value="clear">
+</form>

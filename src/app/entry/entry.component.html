@@ -1,0 +1,22 @@
+<form [formGroup]="employeeformRef" (ngSubmit)="savebtnclicked()">
+<table>
+  <tr>
+    <th colspan="2"> Employee Detail</th>
+
+  </tr>
+  <tr>
+    <th>Name :</th>
+    <th><input type="text" formControlName="name"></th>
+  </tr>
+  <tr>
+    <th>Salary :</th>
+    <th><input type="number" formControlName="salary"></th>
+  </tr>
+  <tr>
+    <th colspan="2" align="center">
+      <input type="submit" value="save">
+      <input type="reset" value="clear">
+    </th>
+  </tr>
+</table>
+</form>

@@ -1,0 +1,13 @@
+<form [formGroup]="Studentref" (ngSubmit)="confirmbtnclicked()">
+  Student's Name : <input class="form-control" type="text" formControlName="name"> <br>
+
+
+  Student's Roll-No : <input class="form-control" type="text" formControlName="roll"> <br>
+
+
+  Student's STD : <input type="text" class="form-control" formControlName="std"> <br>
+<div style="margin-left: 10px">
+  <input type="submit" class="btn btn-outline-primary" value="ADD">
+  <span style="margin-left: 5px"><input type="reset" class="btn btn-outline-danger" value="Clear"></span>
+  </div>
+</form>

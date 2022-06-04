@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>User Id</th>
+    <th>Id</th>
+    <th>title</th>
+    <th>body</th>
+  </tr>
+  <tr *ngFor="let post of apidata">
+    <td>{{post.userId}}</td>
+    <td>{{post.id}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
+
+  </tr>
+</table>

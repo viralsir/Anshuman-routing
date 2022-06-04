@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Qty</th>
+    <th>Rate</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor="let product of this.product_service.product_list">
+
+    <td>{{product.name}}</td>
+    <td>{{product.qty}}</td>
+    <td>{{product.rate}}</td>
+    <td>{{product.qty * product.rate}}</td>
+  </tr>
+</table>
